@@ -25,6 +25,7 @@ public:
 };
 
 std::istream& operator>>(std::istream& is, Student& sv); 
+std::ostream& operator<<(std::ostream& is, Student& sv); 
 
 
 #endif

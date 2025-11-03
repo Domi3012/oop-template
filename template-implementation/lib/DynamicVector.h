@@ -67,9 +67,9 @@ public:
 
     }
 
-    void print() const {
+    void print(char deli) const {
         for (int i = 0; i < _size; i++) {
-            std::cout << _data[i] << ' ';
+            std::cout << _data[i] << deli;
         }
     }
 };

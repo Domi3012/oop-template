@@ -45,6 +45,14 @@ std::istream& operator>>(std::istream& is, Student& sv) {
     return is;
 }
 
+std::ostream& operator<<(std::ostream& is, Student& sv) {
+    is << "----------------------------------------------------\n";
+    is << "MSSV: " << sv.id() << "\n";
+    is << "Tên: " << sv.name() << "\n";
+    is << "GPA: " << sv.gpa() << "\n";
+    is << "----------------------------------------------------";
+}
+
 std::string Student::id() const { return _id; }
 std::string Student::name() const { return _name; }
 float Student::gpa() const { return _gpa; }
