@@ -1,0 +1,1 @@
+g++ -std=c++23 ./main.cpp ./bus/*.cpp ./dto/*.cpp ./ui/*.cpp ./useCase/*.cpp -o ./build/app    

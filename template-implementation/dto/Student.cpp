@@ -26,6 +26,7 @@ void Student::printInfo() {
 
 
 std::istream& operator>>(std::istream& is, Student& sv) {
+    std::cout << '\n';
     std::cout << "      Nhập mã số sinh viên: ";
     is.ignore();
     std::string temp; getline(is, temp);
@@ -51,6 +52,7 @@ std::ostream& operator<<(std::ostream& is, Student& sv) {
     is << "Tên: " << sv.name() << "\n";
     is << "GPA: " << sv.gpa() << "\n";
     is << "----------------------------------------------------";
+    return is;
 }
 
 std::string Student::id() const { return _id; }
